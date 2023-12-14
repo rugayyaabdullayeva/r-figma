@@ -1,0 +1,82 @@
+.shorten {
+  background: #eff1f7;
+  padding: 50px 0;
+  & .shorten-wrapper {
+    background-image: url("../../../../assets/image/Path.png");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 52px 64px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    bottom: 5rem;
+  }
+  & button {
+    border-radius: 28px;
+    background: #2bd0d0;
+    color: #fff;
+    padding: 14px 40px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    &:hover {
+      background-color: #9ae3e3;
+      transition: all 0.3s;
+      color: #fff;
+    }
+  }
+}
+input {
+  border-radius: 10px;
+  background: #fff;
+  width: 700px;
+  padding: 10px;
+  border: none;
+}
+input::placeholder {
+  color: #34313d;
+  font-size: 16px;
+  font-weight: 500;
+  border-color: red;
+}
+.error-message {
+  color: red;
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .shorten-wrapper {
+    flex-direction: column;
+    max-width: 560px !important;
+    padding: 13px 78px !important;
+    & input {
+      width: 390px !important;
+      margin-bottom: 10px;
+    }
+    & button {
+      width: 390px !important;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .shorten-wrapper {
+    padding: 10px 20px !important;
+    max-width: 300px !important;
+    & input {
+      width: 250px !important;
+      height: 40px !important;
+    }
+    & button {
+      width: 250px !important;
+      height: 40px !important;
+    }
+  }
+}
